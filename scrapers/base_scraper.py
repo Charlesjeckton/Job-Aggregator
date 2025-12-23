@@ -2,6 +2,7 @@ import requests
 from bs4 import BeautifulSoup
 from utils.cleaner import clean_text  # Import your updated cleaner
 
+
 class BaseScraper:
     def __init__(self, base_url):
         self.base_url = base_url
