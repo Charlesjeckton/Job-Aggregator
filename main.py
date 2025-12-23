@@ -43,16 +43,16 @@ def run():
 
     # 2. Define all active scraper instances
     active_scrapers = [
-        #BrighterMondayScraper(),
-        #MyJobMagScraper(),
-        #FuzuScraper(),
-        #ReliefWebScraper(),
-        #UNICEFScraper(),
+        BrighterMondayScraper(),
+        MyJobMagScraper(),
+        FuzuScraper(),
+        ReliefWebScraper(),
+        UNICEFScraper(),
         UNDPScraper(),
-        #IndeedScraper(),
-       # KenyaJobsComScraper(),
-        #UNCareersScraper(),
-        #JobWebKenyaScraper()
+        IndeedScraper(),
+        KenyaJobsComScraper(),
+        UNCareersScraper(),
+        JobWebKenyaScraper()
     ]
 
     all_jobs = []
