@@ -7,7 +7,7 @@ from scrapers import (
     MyJobMagScraper,
     FuzuScraper,
     ReliefWebScraper,
-    UNICEFScraper,
+    UNICEFScraper
 )
 from database.db import JobDatabase
 from utils.logger import logger
