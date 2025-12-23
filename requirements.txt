@@ -3,3 +3,4 @@ beautifulsoup4~=4.13.4
 pandas~=2.3.0
 cloudscraper~=1.2.71
 selenium~=4.39.0
+playwright~=1.57.0

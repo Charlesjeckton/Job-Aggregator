@@ -7,12 +7,7 @@ from scrapers import (
     MyJobMagScraper,
     FuzuScraper,
     ReliefWebScraper,
-    JobWebKenyaScraper,
-    UNCareersScraper,
-    UNDPScraper,
     UNICEFScraper,
-    IndeedScraper,
-    KenyaJobsComScraper
 )
 from database.db import JobDatabase
 from utils.logger import logger
@@ -43,16 +38,11 @@ def run():
 
     # 2. Define all active scraper instances
     active_scrapers = [
-        #BrighterMondayScraper(),
-        #MyJobMagScraper(),
-        #FuzuScraper(),
-        #ReliefWebScraper(),
-        #UNICEFScraper(),
-        UNDPScraper(),
-        #IndeedScraper(),
-       # KenyaJobsComScraper(),
-        #UNCareersScraper(),
-        #JobWebKenyaScraper()
+        BrighterMondayScraper(),
+        MyJobMagScraper(),
+        FuzuScraper(),
+        ReliefWebScraper(),
+        UNICEFScraper(),
     ]
 
     all_jobs = []
