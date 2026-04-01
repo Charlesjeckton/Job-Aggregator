@@ -1,24 +1,64 @@
-# 🚀 AI-Powered Job Aggregator
+# 📌 Internship Job Scraper (Kenya)
 
-A robust Python-based web scraping tool designed to automatically find, clean, and store internship and junior-level job listings. This project focuses on **BrighterMonday Kenya**, helping entry-level professionals automate their job search.
+## 📖 Overview
+This project is a Python-based job scraper that collects internship opportunities from multiple Kenyan job platforms. It automates the process of searching, filtering, and exporting job listings into a structured Excel file for easy tracking and application.
 
-## ✨ Features
-* **Automated Scraping:** Extracts job titles and direct links from BrighterMonday.
-* **Intelligent Scoring:** Automatically calculates a `relevance_score` based on keywords (e.g., Intern, Junior, Graduate).
-* **Data Persistence:** Saves unique job listings to an **SQLite Database** to prevent duplicates and exports a clean **CSV** for daily viewing.
-* **Excel Integration:** Automatically opens the results in Excel upon completion.
-* **Robust Logging:** Detailed timestamped logs for tracking successes and errors.
-* **Bot-Detection Bypass:** Implements human-like delays and browser-mimicking headers.
+The scraper focuses on entry-level tech roles such as:
+- Junior Developer
+- IT Support
+- Software Engineering Internships
+- Other IT-related roles
+
+---
+
+## 🚀 Features
+- 🔍 Scrapes multiple job platforms:
+  - BrighterMonday  
+  - MyJobMag  
+  - Fuzu  
+  - LinkedIn  
+  - KenyanJobsConnection  
+
+- 🎯 Keyword-based filtering (e.g., *Internship*, *Junior Developer*, *IT Support*)
+- 📅 Extracts key job details:
+  - Job Title  
+  - Company Name  
+  - Location  
+  - Posting Date  
+  - Job Link  
+
+- 📊 Exports results to Excel
+- ⚡ Modular structure for easy extension
+
+---
+
+## 🛠️ Tech Stack
+- Python 3.x  
+- requests  
+- BeautifulSoup  
+- pandas  
+- openpyxl
+
+
+internship-scraper/
+│
+├── scrapers/
+│   ├── brightermonday.py
+│   ├── myjobmag.py
+│   ├── fuzu.py
+│   ├── linkedin.py
+│   └── kenyanjobs.py
+│
+├── utils/
+│   └── helpers.py
+│
+├── output/
+│   └── internships.xlsx
+│
+├── main.py
+├── requirements.txt
+└── README.md
+
+---
 
 ## 📂 Project Structure
-```text
-job_aggregator/
-│
-├── scrapers/          # Scraper logic and base classes
-├── database/          # SQLite DB storage and management
-├── utils/             # Data cleaning and logging utilities
-├── output/            # Generated CSV reports
-├── logs/              # History of scraper runs
-├── main.py            # Entry point for the application
-├── run_aggregator.bat # One-click Windows runner
-└── requirements.txt   # Required Python libraries
