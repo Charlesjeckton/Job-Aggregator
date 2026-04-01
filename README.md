@@ -38,26 +38,22 @@ The scraper focuses on entry-level tech roles such as:
 - pandas  
 - openpyxl
 
-
+## 📂 Project Structure
 internship-scraper/
 │
 ├── scrapers/
-│   ├── brightermonday.py
-│   ├── myjobmag.py
-│   ├── fuzu.py
-│   ├── linkedin.py
-│   └── kenyanjobs.py
+│ ├── brightermonday.py
+│ ├── myjobmag.py
+│ ├── fuzu.py
+│ ├── linkedin.py
+│ └── kenyanjobs.py
 │
 ├── utils/
-│   └── helpers.py
+│ └── helpers.py
 │
 ├── output/
-│   └── internships.xlsx
+│ └── internships.xlsx
 │
 ├── main.py
 ├── requirements.txt
 └── README.md
-
----
-
-## 📂 Project Structure
