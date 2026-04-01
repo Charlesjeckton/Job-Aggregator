@@ -15,8 +15,7 @@ The scraper focuses on entry-level tech roles such as:
 - 🔍 Scrapes multiple job platforms:
   - BrighterMonday  
   - MyJobMag  
-  - Fuzu  
-  - LinkedIn  
+  - Fuzu   
   - KenyanJobsConnection  
 
 - 🎯 Keyword-based filtering (e.g., *Internship*, *Junior Developer*, *IT Support*)
